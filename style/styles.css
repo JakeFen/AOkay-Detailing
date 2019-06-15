@@ -1,0 +1,327 @@
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.primary-color {
+    color:  #FFFFFF;
+}
+
+.secondary-color {
+    color:#0077b3;
+}
+
+header {
+    margin-top: 59px;
+}
+
+.logo, #nav a, .section-button {
+    text-decoration: none;
+}
+
+.section-width {
+    width: 90%;
+    margin: auto;
+}
+
+.nav-anchor::before {
+    content: "";
+    display: block;
+    height: 59px;
+    margin: -59px 0 0;
+}
+
+/* ////////////////NAVIGARTION/////////////// */
+
+.header-nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 5px 0;
+    background: #222;
+    display: flex;
+    align-items: center;
+    border-bottom: solid white 1px;
+    opacity: .95;
+}
+
+#nav {
+    position: fixed;
+    top: 0%;
+    padding-top: 69px;
+    opacity: .95;
+    border-left: solid white 1px;
+    border-right: solid white 1px;
+    display: none;
+    flex-direction: column;
+    background: #222;
+    width: 310px;
+    height: 100%;
+    z-index: 900;
+}
+
+#nav li a {
+    display: inline-block;
+    padding: 20px;
+}
+
+#nav li:hover {
+    background: #006699;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#burger {
+    height: 48px;
+    width: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#burger:hover {
+    cursor: pointer;
+}
+
+#burger i {
+    height: 3px;
+    width: 24px;
+    margin:2.5px auto;
+    background: white;
+}
+
+.logo-wrapper {
+    height: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.logo span {
+    font-weight: 100;
+}
+
+/* ////////////////HEADER CONTENT/////////////// */
+
+#header-content {
+    padding: 60px 0;
+    animation: slideBg 12s infinite 0s;
+    animation-timing-function: ease-in-out;
+    background: 
+    linear-gradient( rgba(0,0,0,.3), rgba(0,0,0,.3) ),
+    url('../images/white-car-background.jpg') no-repeat center/cover;
+}
+
+@keyframes slideBg {
+0% {
+    background: 
+    linear-gradient( rgba(0,0,0,.3), rgba(0,0,0,.3) ),
+    url('../images/white-car-background.jpg') no-repeat center/cover;
+}
+75% {
+    background: 
+    linear-gradient( rgba(0,0,0,.3), rgba(0,0,0,.3) ),
+    url('../images/white-boat-background.jpg') no-repeat center/cover;
+}
+}
+
+h1 {
+    font-size: 38px;
+    font-weight: 600;
+}
+
+h1 span, h2 span {
+    display: block;
+    font-weight: 100;
+}
+
+.header-circle, .testimonial-circle {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+}
+
+.header-circle {
+    background: black;
+}
+
+.header-circle:hover {
+    cursor:pointer;
+}
+
+/* ////////////////ABOUT/////////////// */
+
+#about {
+    background: #333;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#about p {
+    line-height: 1.5;
+}
+
+/* ////////////////TOP AND BOTTOM PADDING SECTIONS/////////////// */
+
+#about, #why-us, #testimonials, #contact{
+    padding: 40px 0;
+}
+
+/* ////////////////READ MORE BUTTONS/////////////// */
+
+.section-button {
+    color: white;
+    display: inline-block;
+    background: #0077b3;
+    padding: 20px 30px;
+    margin: 25px 0;
+}
+
+.section-button:hover {
+    background: #006699;
+}
+
+/* ////////////////WHY US/////////////// */
+
+#why-us {
+    background: #d9d9d9;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+h2 span {
+    color: black;
+}
+
+.why-us-content-section {
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.why-us-content-section img {
+    border-radius: 100%;
+}
+
+/* ////////////////TESTIMONIAL/////////////// */
+
+#testimonials {
+    position: relative;
+}
+
+.testimonial-content {
+    line-height: 1.5;
+    font-weight: 100;
+}
+
+.test-arrow-left, .test-arrow-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.test-arrow-left {
+   left: 0;
+}
+
+.test-arrow-right {
+    right: 0;
+}
+
+.testimonial-content img {
+    margin: 16px 0;
+    border-radius: 100%;
+}
+
+.testimonial-circle {
+    background: #888;
+}
+
+.testimonial-circle:hover {
+    background: #0077b3;
+}
+
+.active {
+    background: #0077b3;
+}
+
+/* ////////////////ARROW HOME/////////////// */
+
+.arrow-home {
+    border-radius: 100%;
+    position: fixed;
+    padding: 15px;
+    bottom: 2%;
+    right: 4%;
+    display: block;
+    background: #0077b3;
+    opacity: .6;
+}
+
+.arrow-home:hover {
+    opacity: 1;
+}
+
+/* ////////////////CONTACT/////////////// */
+
+#contact {
+    background: #333;
+}
+
+.contact-under-bar {
+    margin: auto;
+    height: 4px;
+    width: 100px;
+    background: #666;
+}
+
+.contact-content {
+    margin: auto;
+    width: 290px;
+    line-height: 1.4;
+}
+
+.contact-content img{
+    margin: 20px 0 10px;
+}
+
+.social-media-icon {
+    display: block;
+    background: white;
+    margin: 10px;
+    border-radius: 100%;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+
+/* ////////////////FOOTER/////////////// */
+
+footer {
+    color: #999;
+    background: #222;
+    line-height: 1.5;
+    font-size: 14px;
+    padding: 12px;
+}
