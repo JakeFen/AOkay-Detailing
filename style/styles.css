@@ -23,7 +23,7 @@ header {
     margin-top: 59px;
 }
 
-.logo, #nav a, .section-button {
+.logo, #nav a, .section-button, .web-dev, .phone-num {
     text-decoration: none;
 }
 
@@ -307,11 +307,12 @@ h2 span {
     margin: 20px 0 10px;
 }
 
-.social-media-icon {
-    display: block;
-    background: white;
-    margin: 10px;
+.social-media-icon a {
     border-radius: 100%;
+    border: solid #999 1px;
+    display: block;
+    padding: 7px;
+    margin: 10px;
 }
 
 .social-media {
@@ -321,10 +322,14 @@ h2 span {
 
 /* ////////////////FOOTER/////////////// */
 
-footer {
+footer ul {
     color: #999;
     background: #222;
     line-height: 1.5;
-    font-size: 14px;
+    font-size: 13px;
     padding: 12px;
+}
+
+.web-dev {
+    color: #999;
 }
